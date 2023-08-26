@@ -1,0 +1,16 @@
+from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+BTN_WEATHER = InlineKeyboardButton('Weather', callback_data='weather')
+BTN_WIND = InlineKeyboardButton('Wind', callback_data='wind')
+BTN_SUN_TIME = InlineKeyboardButton('Sunrise and sunset', callback_data='sun_time')
+BTN_ADD_THING = InlineKeyboardButton('Add thing', callback_data='add_thing')
+BTN_DELETE_THING = InlineKeyboardButton('Delete thing', callback_data='delete_thing')
+BTN_LIST = InlineKeyboardButton('List of your things', callback_data='list')
+BTN_CLOTHES = InlineKeyboardButton("Clothes for this weather", callback_data='clothes')
+
+WEATHER = InlineKeyboardMarkup().add(BTN_WIND, BTN_SUN_TIME).add(BTN_ADD_THING, BTN_CLOTHES).add(BTN_LIST)
+WIND = InlineKeyboardMarkup().add(BTN_WEATHER).add(BTN_SUN_TIME, BTN_CLOTHES)
+SUN_TIME = InlineKeyboardMarkup().add(BTN_WEATHER, BTN_WIND, BTN_CLOTHES)
+HELP = InlineKeyboardMarkup().add(BTN_WEATHER, BTN_WIND).add(BTN_SUN_TIME, BTN_CLOTHES)
+CLOTHES = InlineKeyboardMarkup().add(BTN_WEATHER, BTN_WIND, BTN_SUN_TIME)
+THINGS = InlineKeyboardMarkup().add(BTN_WEATHER, BTN_WIND).add(BTN_ADD_THING, BTN_CLOTHES)
+WARDOBE = InlineKeyboardMarkup().add(BTN_ADD_THING, BTN_DELETE_THING)
