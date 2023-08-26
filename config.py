@@ -1,5 +1,5 @@
-BOT_API_TOKEN = '5680582816:AAHESypM2NmS4KsyBfp8okCxuqLwRWKRhBo'
-WEATHER_API_KEY = '64c14f18603aaed91f004b3395865889'
+BOT_API_TOKEN = ''
+WEATHER_API_KEY = ''
 
 CURRENT_WEATHER_API_CALL = (
         'https://api.openweathermap.org/data/2.5/weather?'
